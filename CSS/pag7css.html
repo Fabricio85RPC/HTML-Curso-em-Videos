@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="css.favicon.png" type="image/x-icon">
+    <style>
+        header{
+            background-color: #253C59;
+            border-bottom:solid 4px orangered;
+            padding: 50px 0 40px 0;
+            margin: -7px -7px 0px -8px;
+        }
+        header h1 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }   
+        header p{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        } 
+        main{
+            background-color: white;
+            margin: 5px 40px;
+        }
+        main mark{
+            background-color:rgba(248, 92, 35, 0.904);
+            border-radius: 3px;
+        }
+        main img{
+            display: block;
+            margin: auto;
+            max-width: 60%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        main h1{
+            background-image: linear-gradient(to right,#253c59e3,rgba(255, 68, 0, 0.567));
+            text-align: center;
+            color: rgba(29, 28, 28, 0.992);
+            margin: 0 0px 0 0px;
+        }
+        main h2{
+
+            text-indent: 2%;
+
+        }
+        p{
+            text-indent: 20px;
+        }
+       
+        nav{
+            text-align: center;
+        }
+        footer{
+            background-color:#253C59;
+            margin: 5px -7px -7px -7px;
+            text-align: center;
+            font-size: large;
+            color: white;
+        }
+
+        div{
+            display: inline-block;
+            background-color: gray;
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            margin: 5px 8px 3px 15px;
+        }
+        div#a:hover{
+            background-color: rgba(18, 18, 255, 0.873);
+        }
+        div#b:hover{
+            background-color: yellow;
+        }
+        div#c:hover{
+            background-color: red;
+        }
+        div >p{
+            display: none;
+        }
+        div:hover >p{
+            display: block;
+            background-color:rgb(249, 255, 249);
+            margin: 2px;
+        }
+        div:hover > h2{
+            font-size: 30px;
+        }
+        
+        a:hover{
+            color: red;
+            font-size: 27px;
+        }
+        a:active{
+            color: rgb(21, 241, 9);
+        }
+        div#d{
+            background-color: rgba(11, 11, 240, 0.821);
+            color: white;
+            width: 600px;
+            height: 50px;
+            margin: 0 10px 10px 20px;
+            
+        }
+        div#d:hover >p{
+            display: block;
+            background-color: red;
+            color: white;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+        .guanabara{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-decoration: none;
+        }
+        .guanabara:hover{
+            font-weight: bolder;
+            font-size: 25px;
+            color: #253C59;
+            text-decoration: underline;
+        }
+        .guanabara:active{
+            background-color: red;
+            color: white;
+        }
+        .guanabara::after{
+            content: '[link]';
+            color: rgb(110, 126, 142);
+            text-decoration: none;
+        }
+        
+    </style>
+    <title>Curso de css</title>
+</head>
+<body>
+    <header>
+        <h1>Pseudo-classes em CSS</h1>
+        <p>Palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado</p>
+    </header>
+    <main>
+        <article>   
+        <h1>Pseudo-classes</h1>
+        <p>As pseudo-classes iniciam com<mark> símbolo : (dois pontos)</mark> e geralmente são aplicadas a algum seletor CSS mais simples, como um <mark>seletor de classe </mark>ou um<mark> seletor de tag</mark>, permitindo formatações mais específicas de acordo com o estado do elemento.</p>
+        <img src="pseudo-1.png" alt="" >
+        <p id="lista">Existem diversos tipos de pseudo-classes, como as listadas abaixo: <br>
+            <ul>
+                <li>:focus – representa um elemento que possui o foco, o que pode ocorrer quando o usuário seleciona o elemento através do teclado ou mouse.</li>
+                <li>:hover – representa um elemento sobre o qual o mouse está se movendo.</li>
+                <li>:checked – é utilizada para selecionar um elemento radio, checkbox ou option que esteja marcado ou com estado ligado.</li>
+                <li>:required – representa qualquer input, select, ou textarea que possua o atributo required.</li>
+                <li>:first-child – seleciona qualquer elemento que seja o primeiro filho da tag a qual essa pseudo-classe é aplicada.</li>
+                <li>:nth-child(x) – seleciona qualquer elemento que seja o filho de numero x da tag onde se aplica esta pseudo-classe.</li>
+                <li>:fullscreen – representa os elementos que estão atualmente no modo tela-cheia.</li>
+            </ul></p>
+        <h2>O que são pseudoclasses?</h2>
+        <p>Uma pseudo-classe é usada para definir um estado especial de um elemento.</p>
+        <p>Por exemplo, pode ser usado para:
+            <ul>
+                <li>Estilizar um elemento quando um usuário 
+                passa o mouse sobre ele</li>
+                <li>Estilize links visitados e não visitados de maneira diferente</li>
+                <li>Estilize um elemento quando ele estiver em foco</li>
+            </ul>
+        </p>
+        <h2>Exemplo de Pseudo-classes</h2>
+        <p>Passe o mouse em  cima dos blocos</p>
+        <div id="a">
+        <h2>Teste 01</h2>
+        <p>Texto oculto</p>
+                </div>
+        <div id="b">
+            <h2>Teste 02</h2>
+            <p>Texto oculto</p>
+        </div>
+        <div id="c">
+            <h2>Teste 03</h2>
+            <p>Texto Oculto</p>
+        </div>
+                <p>Print desse pseudo:</p>
+                <img src="pseudo2.png" alt="">
+        </article>
+        <article>
+            <h1>Pseudo-Elementos</h1>
+            <h2>Dica de ferramenta simples:</h2>
+            <div id="d">
+                Passe o mouse sobre um elemento <mark>div</mark> para mostrar um elemento <mark>
+                p</mark>
+                <p>Esse e o elemento <mark>p</mark> oculto como forma de ferramenta.</p>
+            </div>
+        </article>
+        <article>
+            <h1>Personalizando Links com Pseudos-Elementos</h1>
+                <ul>
+                    <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-01/d009/imagens" class="guanabara">Repositorio GitHub</a></li>
+                    <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="guanabara">Canal do YouTube</a></li>
+                    <li><a href="https://www.cursoemvideo.com/" class="guanabara">Site curso em video</a></li>
+                </ul>
+        </article>
+        <article>
+            <h1>Dicas Importantes</h1>
+                <ul>
+                    <li><abbr title="Representa apenas a tag selecionada"># = id</abbr></li>
+                    <li>. = class</li>
+                    <li>: = pseudo</li>
+                    <li>:: = pseudo-element</li>
+                    <li> > = clildren(filho)</li>
+                </ul>
+        </article>
+    </main>
+    <nav>
+        <a href="pag6css.html">Pagina Anterior</a> / 
+        <a href="pag8css.html">Proxima Pagina</a> /
+        <a href="#">Voltar para home</a>
+
+    </nav>
+    <footer>
+        Resumo criado por Fabricio Ribeiro
+    </footer>
+</body>
+</html>
