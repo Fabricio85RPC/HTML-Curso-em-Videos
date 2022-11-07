@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários tamanhos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagenspag004/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagenspag004/imagem-m.png" type="image/png">
+        <img src="imagenspag004/imagem-g.png" alt="imagem flexivel">
+    </picture>
+    <p>
+        Imagem dinâmica serve para que a imagem do seu site se adequi ao dispositivo do usuário e para isso vc vai utilisar a tag <mark>picture</mark> e dentro da tag <mark>picture</mark> você vai carregar sua imagem maior com a tag <mark>img</mark> e depois as imagens menores com a tag <mark>source media type</mark> <br> <br>
+        <strong>ex:</strong><mark> picture> <br> source media="(max-width:1050px)" srcset="imagenspag004/imagem-m.png" type="image/png <br> /picture</mark>
+    </p>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagenspag004/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagenspag004/imagem-m.png" type="image/png">
+        <img src="imagenspag004/imagem-g.png" alt="dinamico">
+    </picture>
+    <h1>
+        Audio em html
+    </h1>
+    <audio preload="metadata" autoplay>
+        <source src="midia/takeoff (sting) - ethan meixsell.mp3" type="audio/mpeg">
+    </audio>
+     
+    <p>        
+        <a href="midia/takeoff (sting) - ethan meixsell.mp3" target="_blank">Para baixar a música click aqui</a>
+    </p>
+    <P>
+        Esse e o exemplo de como colocar audio em html 5:
+        <br>
+            <mark>
+            audio preload="metadata" autoplay <br>
+            source src="midia/takeoff (sting) - ethan meixsell.mp3" type="audio/mpeg" <br> /audio
+            </mark>
+    </P>        
+    <h3>Segundo audio usando controls</h3>
+    <p>para colocar oa barra de controle de audio, basta adicionar <mark>controls</mark> dentro da <mark>tag audio</mark>
+    </p>
+        <audio preload="metadata" controls>
+            <source src="midia/rooster - telecasted.mp3" type="audio/mpeg">
+        </audio>  
+    <h1>Video em html</h1> 
+    <h2>Videos em hospedagem própria</h2>
+    <video  height="200"  width="300" poster="imagenspag004/capa video1.jpg" controls>
+        <source src="midia/liquido verm-webm.webm" type="video/webm">
+        <source src="midia/liquido verm-mp4.mp4" type="video/mp4">
+    </video>
+    <p>exemplo dentro do html 
+    <br> <mark>
+        video  height="200"  width="300" poster="imagenspag004/capa video1.jpg" controls> <br>
+        source src="midia/liquido verm-webm.webm" type="video/webm"> <br>
+        source src="midia/liquido verm-mp4.mp4" type="video/mp4">   /video>
+    </mark> </p>
+    <p>Seu navegador não tem compatibilidade com reprodução de video </p> <br>
+    <a href="midia/liquido verm-webm.webm" target="_blank">Clique aqui para baixar</a>
+    <h2>Videos em hospedagem externa</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MyAYLIUDnQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Para colocar um video externo como por exemplo o YouTube basta entrar no video escolhido ir no compartilhar e compartilhar na opção Incorporar e copiar todo o codigo e passar para seu html</p>
+     
+    <H3> videos do vimeo</H3>
+    <iframe src="https://player.vimeo.com/video/356935968?h=8c61e74ff3&portrait=0" width="540" height="304" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><br>
+    <a href="pag005.html">Pagina 5</a> <br>
+    <a href="ex002.html">Pagina inicial</a>
+
+    
+</body>
+</html>
