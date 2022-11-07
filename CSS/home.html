@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css.favicon.png" type="image/x-icon">
+    <title>Curso de CSS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    :root{
+        --cor1:  rgb(39, 144, 213);
+        --cor2:  #62CADB;
+        --font-header: 'Fredericka the Great', cursive;
+    }
+        body{
+            background-color: #62CADB;
+        }
+        header{ 
+            font: ;
+            text-align: center;
+            background-color: rgb(39, 144, 213);
+            border-radius: 2px;
+            border-bottom:  solid 6px white;
+            margin: -7px -7px 0 -7px ;
+            padding: 5px 5px 5px 5px;
+
+        }
+        header h1{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            margin-top: -5px;
+        }
+        header p{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 18px;
+            margin-top: -25px;
+        }
+        header img{
+            border-radius: 50%;
+        }
+        #com{
+            background-image: linear-gradient(to right, rgba(39, 143, 213, 0.419), #62cbdb00);
+            font-size: 18px;
+            margin: 2px;
+            padding: 2px;
+            border-radius: 5px;
+            width: 600px;
+            height: 50px;
+            color: rgb(56, 54, 54);
+        }
+        #com >p{
+            display: none;
+        }
+        #com >p:hover{
+            background-color: rgb(149, 199, 205);
+            display: block ;
+        }
+        #com::after{
+            content:'\1F4A1' ;}
+    
+    </style>
+</head>
+<body>
+    <header>
+            <img src="imagem.home.jpg" alt="">
+            <h1>Curso de CSS</h1>
+            <p>Resumo do curso de CSS basico feito no Curso em Video</p>
+    </header>
+    <nav>
+        <Menu>
+                
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+        </Menu>
+    </nav>
+    <main>
+
+        <div id="com">
+            Comentario do Autor sobre o projeto
+            <a href=""></a><p> Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade um rascunho do que estou aprendendo. <br>
+            Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e como nivel de aprendizado diferente.</p>
+        </div>
+
+
+
+    </main>
+
+    
+</body>
+</html>
