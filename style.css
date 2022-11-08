@@ -1,0 +1,72 @@
+@charset "UFT-8";
+
+body{
+    background-image: linear-gradient(to  right,#D99255 50%,#F2BE22);
+}
+main{background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px 0px #805733;
+    width: 600px;
+    padding: 10px;
+    margin: -8px auto 0 auto  ;
+}
+main mark{
+    background-image: linear-gradient(to  right,#D99255 50%,#F2BE22);
+    padding: 2px;
+    border-radius: 5px;
+}
+main mark:hover{
+    font-size: 18px;
+}
+main a{
+    text-decoration: none;
+    color: #0086bf;
+}
+main a:hover{
+    font-size: 17px;
+    color: #F2BE22;
+}
+main a::after{
+    content:'\1F517' ;
+}
+h1{
+    color: #528db1;
+    text-align: center;
+    text-shadow: 1px 1px 1px #3f6177 ;
+}
+h2{
+    color: #74adc5;
+}
+h3{
+    color: #86bdd5;
+    text-align: center;
+}
+nav{
+    background-image: linear-gradient(to top, #A3C9D9,#537583);
+    text-align: center;
+    color:#D99255 ;
+    padding: 5px;
+    margin: 1px -7px 5px -7px; 
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    font-size: 18px;
+    color: blueviolet;
+
+}
+footer{
+    color: #2c4b60 ;
+    text-align: center;
+    margin:5px 5px -5px 5px;
+    text-shadow: 1px 1px 1px;
+}
+img{
+    padding: 30px;
+    margin: auto;
+}
+img:hover{
+    width: 95%;
+}
