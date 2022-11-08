@@ -41,25 +41,26 @@
         header img{
             border-radius: 50%;
         }
-        #com{
-            background-image: linear-gradient(to right, rgba(39, 143, 213, 0.419), #62cbdb00);
-            font-size: 18px;
-            margin: 2px;
-            padding: 2px;
-            border-radius: 5px;
-            width: 600px;
-            height: 50px;
-            color: rgb(56, 54, 54);
+        aside{
+            background-color: white;
+            text-align: justify;
+            padding: 1px 3px 0px 3px;
+            margin: 0 0 20px 0;
+            border-radius: 30px 0px 30px 0px;
         }
-        #com >p{
-            display: none;
-        }
-        #com >p:hover{
-            background-color: rgb(149, 199, 205);
-            display: block ;
-        }
-        #com::after{
+        aside #p1::after{
             content:'\1F4A1' ;}
+       main h2{
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+       }     
+       main a:hover{
+        border: solid 2px rgba(24, 24, 24, 0.614);
+        padding: 120px 0px 0px 0px;
+       }
     
     </style>
 </head>
@@ -80,11 +81,13 @@
     </nav>
     <main>
 
-        <div id="com">
-            Comentario do Autor sobre o projeto
-            <a href=""></a><p> Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade um rascunho do que estou aprendendo. <br>
+        <aside>
+            <p id="p1">Comentario do Autor sobre o projeto</p>
+            <p>Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade um rascunho do que estou aprendendo.
             Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e como nivel de aprendizado diferente.</p>
-        </div>
+        </aside>
+        <h2>Menu de Resumos</h2>
+        <a href="index.html"><img src="imagens/capa1.png" alt="capa da pagina1"></a> <br>Primeiros Passos
     </main>
 </body>
 </html>
