@@ -7,10 +7,13 @@
 
     <link rel="shortcut icon" href="css.favicon.png" type="image/x-icon">
     <style>
+        body{
+            margin: 0;
+        }
         header{
             background-color: #253C59;
             border-bottom:solid 4px orangered;
-            padding: 50px 0 40px 0;
+            padding: 30px 5px 30px 5px;
             margin: -7px -7px 0px -8px;
         }
         header h1 {
@@ -34,6 +37,7 @@
         main img{
             display: block;
             margin: auto;
+            padding-bottom: 5px;
             max-width: 60%;
             object-fit: cover;
             object-position: bottom;
@@ -43,6 +47,7 @@
             text-align: center;
             color: rgba(29, 28, 28, 0.992);
             margin: 0 0px 0 0px;
+            border-radius: 3px;
         }
         main h2{
 
@@ -54,7 +59,10 @@
         }
        
         nav{
+            background-image: linear-gradient(to right,#253c59e3,rgba(255, 68, 0, 0.567));
             text-align: center;
+            margin: 0 -6px 0 0;
+            padding: 3px 0px 10px 0px;
         }
         footer{
             background-color:#253C59;
@@ -103,16 +111,18 @@
         div#d{
             background-color: rgba(11, 11, 240, 0.821);
             color: white;
-            width: 600px;
-            height: 50px;
-            margin: 0 10px 10px 20px;
+            width: auto;
+            height: auto;
+         
+            margin: 0 0px 5px 0px;
+            padding: 2px;
             
         }
         div#d:hover >p{
             display: block;
             background-color: red;
             color: white;
-            font-size: 25px;
+            font-size: 17px;
             text-decoration: underline;
         }
         .guanabara{
@@ -148,7 +158,7 @@
         <article>   
         <h1>Pseudo-classes</h1>
         <p>As pseudo-classes iniciam com<mark> símbolo : (dois pontos)</mark> e geralmente são aplicadas a algum seletor CSS mais simples, como um <mark>seletor de classe </mark>ou um<mark> seletor de tag</mark>, permitindo formatações mais específicas de acordo com o estado do elemento.</p>
-        <img src="pseudo-1.png" alt="" >
+        <p><img src="pseudo-1.png" alt="" ></p>
         <p id="lista">Existem diversos tipos de pseudo-classes, como as listadas abaixo: <br>
             <ul>
                 <li>:focus – representa um elemento que possui o foco, o que pode ocorrer quando o usuário seleciona o elemento através do teclado ou mouse.</li>
