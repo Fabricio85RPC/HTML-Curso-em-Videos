@@ -4,52 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="css.favicon.png" type="image/x-icon">
     <title>Curso de CSS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    :root{
+        --cor1:  rgb(39, 144, 213);
+        --cor2:  #62CADB;
+        --font-header: 'Fredericka the Great', cursive;
+    }
+        body{
+            background-color: #62CADB;
+        }
+        header{ 
+            text-align: center;
+            background-color: rgb(39, 144, 213);
+            border-radius: 2px;
+            border-bottom:  solid 6px white;
+            margin: -7px -7px 0 -7px ;
+            padding: 5px 5px 5px 5px;
+
+        }
+        header h1{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            margin-top: -5px;
+        }
+        header p{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 18px;
+            margin-top: -25px;
+        }
+        header img{
+            border-radius: 50%;
+        }
+        aside{
+            background-color: white;
+            text-align: justify;
+            padding: 1px 3px 0px 3px;
+            margin: 0 0 20px 0;
+            border-radius: 30px 0px 30px 0px;
+        }
+        aside #p1::after{
+            content:'\1F4A1' ;}
+       main h2{
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: normal;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+       }     
+       main a:hover{
+        border: solid 2px rgba(24, 24, 24, 0.614);
+        padding: 120px 0px 0px 0px;
+       }
+    
+    </style>
 </head>
 <body>
     <header>
-        <h1>Primeiros Passos</h1>
+            <img src="imagens/imagem.home.jpg" alt="">
+            <h1>Curso de CSS</h1>
+            <p>Resumo do curso de CSS basico feito no Curso em Video</p>
     </header>
-    <main>
-        <article>
-            <h2>Gradiente de Cores</h2>
-            <p>Para fazer gradiente de cores e preciso primeiro fazer um <mark>backgroud-imagem</mark>: e depois adicionar um <mark>linear-gradient()</mark> e dentro do parentese colocar (<mark>to top</mark>*(<strong>são os lados que vc escolher</strong>) ou pode colocar por <mark>porcetagem</mark>digitando os numeros e em seguida o <mark>deg</mark> e as cores desejas) entre outras como circle, etc. <br>Ex:  <strong>background-image: linear-gradient(to top,white, blue);</strong> <br><strong>Ex2: background-image: linear-gradient(45deg,#8038B3, #AB3699, #D8194E, #F83000, #F7CB00) ;</strong>
-            </p>
-            <p>
-                <h2>Seletor Universal em CSS</h2>
-                <p> A tag global de uma CSS e o <mark>*{ }</mark><br>
-                Esse seletor e util quando queremos selecionar todos os elementos da pagína.
-            </p>
-        </article>
-        <article>
-            <h2>Signicados e Caracteristicas</h2>
-            <p>
-                Tudo que for usado nessa CSS vais ser listado com signicado e Caracteristicas nessa Pagina de resumo
-                <ul>
-                    <li>@charset "UFT-8": Formatação</li> 
-                    <li>border-radius:</li>
-                    <li>box-shadow:</li>
-                    <li>width:</li> 
-                    <li>padding:</li>
-                    <li>margin:</li> 
-                    <li>color:</li>
-                    <li>text-align: center</li>
-                    <li>text-shadow:</li> 
-                </ul>.
-            </p>
-            <h3>Css dessa Pagína</h3>
-            <p><img src="imagens/Captura de tela 2022-10-03 140837.png" alt=""></p>
-               
-        </article>
-    </main>
     <nav>
-        <a href="capa.html">Voltar ao home</a> / 
-        <a href="pag2css.html">Proxima Pagina</a>
+        <Menu>
+                
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+        </Menu>
     </nav>
-    <footer>
-        Site Criado por Fabrício Ribeiro
-    </footer>
-    
+    <main>
+
+        <aside>
+            <p id="p1">Comentario do Autor sobre o projeto</p>
+            <p>Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade um rascunho do que estou aprendendo.
+            Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e como nivel de aprendizado diferente.</p>
+        </aside>
+        <h2>Menu de Resumos</h2>
+        <a href="index.html"><img src="imagens/capa1.png" alt="capa da pagina1"></a> <br>Primeiros Passos
+    </main>
 </body>
 </html>
