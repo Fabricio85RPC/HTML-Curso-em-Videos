@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="css.favicon.png" type="image/x-icon">
     <style>
+        body{
+            margin: 0;
+        }
         header{
             border-bottom: solid #5ea1c0;
-            margin: -7px -7px 0px -7px; 
+            margin: 0px; 
+        }
+        header h1{
+            margin: 0;
         }
         main{
             background-color: white;
@@ -23,8 +29,13 @@
             border-radius: 10px;
             box-shadow: 2px 2px 13px 0px  #28404a ;
         }
-        main#img2{
-            max-width: 50%;
+        main img{
+            display: block;
+            margin: auto;
+            object-fit: cover;
+            object-position: bottom;
+            width: 90%;
+     
         }
         h1#principal{
             background-image: linear-gradient(to top, #75B9D9, #99F0DD, #80D994, #C0FC95);
@@ -34,6 +45,8 @@
         }
         .destaque{
             background-color: gold;
+            padding: 2px;
+            border-radius: 3px;
         }
         nav{
             background-image: linear-gradient(to top, #75B9D9, #99F0DD, #80D994, #C0FC95);
@@ -52,7 +65,7 @@
             text-align: center;
             border-radius: 25px;
             box-shadow: 2px 2px 13px 0px  #28404a ;
-            margin: 5px -5px -5px -5px ;
+            margin: 5px 1px -7px 1px ;
             
         }
         a:link{
@@ -83,13 +96,13 @@
         <p>Dentro de css coloque # e depois o nome escolhido na id escolhida.
             
         </p>
-        <img src="imagens\id css.png" alt="print de css">
+        <p><img src="imagens\id css.png" alt="print de css"></p>
         <h1>Diferença entre id e class</h1>
         <p> id: Pode usar varios ids no seu projeto mas cada um com o seu nome. <br>
         id e para um tag como se fosse um cpf(então sobressai ao class) </p>
         <p><span class="destaque">class:</span>e utilizado em varias tags. <br>
         <span class="destaque">class</span> e como se fosse uma familia, e facilita para estilizar seu projeto <br> Lembrando que dentro do seu style ou CSS primeiro digite <span class="destaque">.</span>  e depois o nome da class </p>
-            <img src="imagens\class.png" alt="print de css" id="img2">
+        <p><img src="imagens\class.png" alt="print de css" ></p>
     </main>
     <nav>
         <a href="pag5css.html">Pagina Anterior</a>/
