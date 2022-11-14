@@ -16,7 +16,22 @@
             src: url('fonts/KILLERS.otf') format('opentype'), url('fonts/KILLERS.otf') format('truetype');
             font-weight: normal;
             font-style: normal;
-        }
+        }    
+       :root{
+            --grad1: #2B2073, #3A4E8C, #446EA6,#3BACD9,#84D0D9;
+            --cor1: #446EA6;
+            --cor2:  #67bbdc;
+            --font1:  @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+            --font2: @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap') ;
+            --font3:  @font-face {
+            font-family:'KILLERS';
+            src: url('fonts/KILLERS.otf') format('opentype'), url('fonts/KILLERS.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        };    
+        } 
+        
+
         body{
             font-family: 'PT Serif', serif;
             font-size: 16px;
@@ -66,11 +81,11 @@
             color: white;
         }
         nav img{
+            width: 9%;
             border-radius: 50%;
             margin: 5px 0 20px;
         }
         nav img:hover{
-            width: 30%;
             box-shadow: 2px 2px 20px 3px #67bbdc;
         }
         footer{
@@ -131,7 +146,7 @@
     <nav>
         <a href="pag2css.html"><img src="imagens\voltar3.jpg" alt=""></a>
         <a href="pag4css.html"><img src="imagens\avançar azul.jpg" alt=""></a>
-        <a href="#"><img src="imagens\home.png" alt=""></a>
+        <a href="index.html"><img src="imagens\home.png" alt=""></a>
     </nav>
     <footer>
         Criado por Fabricio Ribeiro
