@@ -11,6 +11,17 @@
     body{
         background-image: url('imagens/imagens-de-fundo/wallpaper004.jpg');
     }
+    mark{
+        background-color: darkslategray;
+        color: white;
+        padding: 1px;
+        border-radius: 3px;
+    }
+    #img1{
+      border: solid 8px black;  
+      width: 60%;
+      
+    }
     .quadrado{
         display: inline-block;
         border-radius: 5px;
@@ -26,13 +37,59 @@
         background-image: linear-gradient(to bottom,yellow,red );
     }
     #q3{
-        background-image: url('imagens/imagens-de-fundo/wallpaper001.jpg');
+        background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
+    }
+    .origem{
+        color: white;
+        font-size: 18px;
+        text-indent: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        border: dashed 2px rgba(30, 30, 30, 0.838) ;
+        width: 250px;
+        height: 250px;
+    }
+    #ori1{
+        padding: 25px;
+        background-image: url('imagens/imagens-de-fundo/pattern001.png');
+        background-repeat: no-repeat;
+        background-origin: padding-box;
+    }
+    #ori2{
+        padding: 25px;
+        background-image: url('imagens/imagens-de-fundo/pattern001.png');
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
+    #ori3{
+        padding: 25px;
+        background-image: url('imagens/imagens-de-fundo/pattern001.png');
+        background-repeat: no-repeat;
+        background-origin: content-box, content-box;
+    }
+    .retangulo{
+        border: solid 2px black;
+        border-radius: 5px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+    #ret1{
+        background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
+    }
+    #ret2{
+        background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
+        background-position: right bottom;
+    }
+    #ret3{
+        background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
+        background-position: center center; 
     }
 </style>
 <body>
     <main>
         <h1>Imagem em background</h1>
-        <p>Alem de<mark> background-color</mark> e <mark>background-imagen:linear-gradient</mark>, temos como colocar uma imagem: </p>
+        <h2 id="q4"></h2>
+        <p>Alem de <mark> background-color</mark> e <mark>background-imagen:linear-gradient</mark>, temos como colocar uma imagem: </p>
         <div class="quadrado" id="q1">
 
         </div> 
@@ -40,12 +97,50 @@
 
         </div>
         <div class="quadrado" id="q3">
+        </div>
+        <h2>Definição e uso</h2>
+        <p>A background-origin propriedade especifica a posição de origem (a área de posicionamento do plano de fundo) de uma imagem de plano de fundo.</p>
+        <ul>
+            <li>padding-box</li>
+            <li>border-box</li>
+            <li>content-box</li>
+            <li>initial</li>
+            <li>inherit</li>
+        </ul>
+        <p>Exemplos</p>
+        <div class="origem" id="ori1">
+            <h3>Padding-box</h3>
+            <p>Bloco 1</p>
+        </div>
+        <div class="origem" id="ori2">
+            <h3>border-box</h3>
+            <p>Bloco 2</p>
+        </div>
+        <div class="origem" id="ori3"> 
+            <h3>Content-box</h3>
+            <p>Bloco 3</p>
+        </div>
+        
+
+        <p>A background-position propriedade define a posição inicial de uma imagem de fundo. <br>
+        <mark>Dica:</mark> Por padrão, uma imagem de plano de fundo é colocada no canto <mark>superior esquerdo</mark><strong>(left top)</strong> de um elemento e repetida vertical e horizontalmente.</p>
+        <p>Exemplos</p>
+        <p><img src="imagens/imagens-de-fundo/wallpaper003.jpg" alt="" id="img1"></p>
+        <div class="retangulo" id="ret1">
+        </div> 
+        <p><mark>Posicionamento padrao (background-position: left top)</mark></p> 
+
+        <div class="retangulo" id="ret2">
+        </div>
+        <p><mark>Direita em baixo (background-position: right bottom)</mark></p>
+
+        <div class="retangulo" id="ret3">
+        </div>
+        <p><mark>Centro e Centro (background-position: center center)</mark> </p>
+
+        
 
         </div>
-      
-      
-      
-
     </main>
 </body>
 </html>
