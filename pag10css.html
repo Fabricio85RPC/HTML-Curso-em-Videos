@@ -10,25 +10,62 @@
 <style>
     body{
         background-image: url('imagens/imagens-de-fundo/wallpaper004.jpg');
+        margin: 0;
+        padding: 0;
     }
+    header{
+        background-image: url(imagens/imagens-de-fundo/wallpaper\ noite.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-origin: padding-box;
+        margin: 0 0 10px 0;
+        padding: 20px 0px 20px 0px
+        
+    }
+    header h1{
+        text-align: center;
+        color: rgb(162, 159, 159);
+       
+    }
+    nav{
+      
+        background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+        background-repeat:no-repeat ;
+        background-size: cover;
+        
+        margin: 10px 0 0px 0 ;
+        padding:5px 0 1px 0 ;
+        text-align: center;
+        color: rgb(140, 138, 138);
+    }
+   
+    nav img{
+            max-width: 8%;
+            border-radius: 50%;      
+    }
+    nav img:hover{
+            
+            box-shadow: 2px 2px 20px 3px #4387a1;
+    }
+
     mark{
         background-color: darkslategray;
         color: white;
         padding: 1px;
         border-radius: 3px;
     }
+
     #img1{
       border: solid 8px black;  
       width: 60%;
-      
     }
+
     .quadrado{
         display: inline-block;
         border-radius: 5px;
         border: solid 2px rgba(30, 30, 30, 0.838) ;
         width: 300px;
         height: 300px;
-
     }
     #q1{
         background-color: aqua;
@@ -39,6 +76,7 @@
     #q3{
         background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
     }
+
     .origem{
         color: white;
         font-size: 18px;
@@ -67,6 +105,7 @@
         background-repeat: no-repeat;
         background-origin: content-box, content-box;
     }
+
     .retangulo{
         border: solid 2px black;
         border-radius: 5px;
@@ -84,12 +123,17 @@
         background-image: url('imagens/imagens-de-fundo/wallpaper003.jpg');
         background-position: center center; 
     }
+
+   
 </style>
 <body>
-    <main>
+    <header>
         <h1>Imagem em background</h1>
+    </header>
+    <main>
+        
         <h2 id="q4"></h2>
-        <p>Alem de <mark> background-color</mark> e <mark>background-imagen:linear-gradient</mark>, temos como colocar uma imagem: </p>
+        <p>Alem de <mark> background-color</mark> e <mark>background-imagen:linear-gradient</mark>, temos como colocar uma imagem <mark>background-image:url(' ')</mark> </p>
         <div class="quadrado" id="q1">
 
         </div> 
@@ -99,7 +143,7 @@
         <div class="quadrado" id="q3">
         </div>
         <h2>Definição e uso</h2>
-        <p>A background-origin propriedade especifica a posição de origem (a área de posicionamento do plano de fundo) de uma imagem de plano de fundo.</p>
+        <h3>A <mark>background-origin</mark> propriedade especifica a posição de origem (a área de posicionamento do plano de fundo) de uma imagem de plano de fundo.</h3>
         <ul>
             <li>padding-box</li>
             <li>border-box</li>
@@ -120,10 +164,8 @@
             <h3>Content-box</h3>
             <p>Bloco 3</p>
         </div>
-        
-
-        <p>A background-position propriedade define a posição inicial de uma imagem de fundo. <br>
-        <mark>Dica:</mark> Por padrão, uma imagem de plano de fundo é colocada no canto <mark>superior esquerdo</mark><strong>(left top)</strong> de um elemento e repetida vertical e horizontalmente.</p>
+        <h3>A <mark>background-position</mark> propriedade define a posição inicial de uma imagem de fundo.</h3> 
+        <p><mark>Dica:</mark> Por padrão, uma imagem de plano de fundo é colocada no canto <mark>superior esquerdo</mark><strong>(left top)</strong> de um elemento e repetida vertical e horizontalmente.</p>
         <p>Exemplos</p>
         <p><img src="imagens/imagens-de-fundo/wallpaper003.jpg" alt="" id="img1"></p>
         <div class="retangulo" id="ret1">
@@ -137,10 +179,16 @@
         <div class="retangulo" id="ret3">
         </div>
         <p><mark>Centro e Centro (background-position: center center)</mark> </p>
+        <h3>A background-size propriedade especifica o tamanho das imagens de fundo.</h3>
 
-        
-
-        </div>
-    </main>
+        <p>Existem quatro sintaxes diferentes que você pode usar com esta propriedade: a sintaxe da palavra-chave ("auto", "cover" e "contain"), a sintaxe de um valor (define a largura da imagem (a altura se torna "auto"), a sintaxe de dois valores (primeiro valor: largura da imagem, segundo valor: altura) e a sintaxe de fundo múltiplo (separada por vírgula).    
+        </p>
+    </main>   
+    <nav>
+        <a href="pag9css.html"><img src="imagens/voltar3.jpg" alt=""></a> 
+        <a href="pag11css.html" target="_blank"><img src="imagens/avançar azul.jpg" alt=""></a>  
+        <a href="index.html"><img src="imagens/home.png" alt=""></a>
+        <p>Site Criado por Fabricio Ribeiro</p>
+    </nav> 
 </body>
 </html>
