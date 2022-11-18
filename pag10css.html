@@ -9,15 +9,14 @@
 </head>
 <style>
     body{
-        background-image: url('imagens/imagens-de-fundo/wallpaper004.jpg');
+        background: black url(imagens/imagens-de-fundo/wallpaper004.jpg) no-repeat scroll;
+        background-size: cover;
         margin: 0;
         padding: 0;
     }
-    header{
-        background-image: url(imagens/imagens-de-fundo/wallpaper\ noite.jpg);
-        background-repeat:no-repeat;
+    header{ 
+        background: white url(imagens/imagens-de-fundo/wallpaper\ noite.jpg) no-repeat padding-box;
         background-size: cover;
-        background-origin: padding-box;
         margin: 0 0 10px 0;
         padding: 20px 0px 20px 0px
         
@@ -27,13 +26,26 @@
         color: rgb(162, 159, 159);
        
     }
+    main{
+        background-color: white;
+        text-align: justify;
+        padding: 3px;
+        margin: -7px 30px -7px 30px;
+        max-width: 1000px;
+        min-width: 300px;
+    }
+    p img{
+        max-width:30% ;
+        padding: 3px;
+    }
+   
+    
     nav{
       
         background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
         background-repeat:no-repeat ;
         background-size: cover;
-        
-        margin: 10px 0 0px 0 ;
+        margin: 11px 0 0px 0 ;
         padding:5px 0 1px 0 ;
         text-align: center;
         color: rgb(140, 138, 138);
@@ -64,8 +76,8 @@
         display: inline-block;
         border-radius: 5px;
         border: solid 2px rgba(30, 30, 30, 0.838) ;
-        width: 300px;
-        height: 300px;
+        width: 270px;
+        height:270px;
     }
     #q1{
         background-color: aqua;
@@ -95,9 +107,8 @@
     }
     #ori2{
         padding: 25px;
-        background-image: url('imagens/imagens-de-fundo/pattern001.png');
-        background-repeat: no-repeat;
-        background-origin: border-box;
+        background: white url('imagens/imagens-de-fundo/pattern001.png') no-repeat border-box ;
+        
     }
     #ori3{
         padding: 25px;
@@ -183,6 +194,20 @@
 
         <p>Existem quatro sintaxes diferentes que você pode usar com esta propriedade: a sintaxe da palavra-chave ("auto", "cover" e "contain"), a sintaxe de um valor (define a largura da imagem (a altura se torna "auto"), a sintaxe de dois valores (primeiro valor: largura da imagem, segundo valor: altura) e a sintaxe de fundo múltiplo (separada por vírgula).    
         </p>
+        <p>
+            <img src="imagens/print background-size.png" alt=""> 
+            <img src="imagens/print background-size2.png" alt=""> 
+            <img src="imagens/print background-size3.png" alt="">
+        </p>
+        <h3>A background-attachmentpropriedade define se uma imagem de plano de fundo rola com o restante da página ou é fixa.</h3>
+        <p>
+            <img src="imagens/backgroud-attachment.png" alt="">
+            <img src="imagens/backgroud-attachment2.png" alt="">
+        </p>
+        <h2>Shorthand Background</h2>
+        <p><strong>color > image > repeat > >attachment > position</strong></p>
+        <p><mark>Size</mark> fazer individual</p>
+        <p><img src="imagens/backgroud-shorthand.png" alt=""></p>
     </main>   
     <nav>
         <a href="pag9css.html"><img src="imagens/voltar3.jpg" alt=""></a> 
