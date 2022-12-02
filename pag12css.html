@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Css</title>
+</head>
+<style>
+    body{
+        background-color: rgb(230, 228, 228);
+        margin: 0px;
+        padding: 0px;
+    }
+    img{
+        max-width: 99%;
+        padding: 1px;
+    }
+    iframe{
+        border: solid 2px;
+        margin: auto;
+        padding:10px;
+        width: 400px;
+        height: 400px;
+        display: block;
+    }
+</style>
+<body>
+    <header>
+        <h1>Iframe</h1>
+        <p>Aprendendo sobre iframe para um melhor enquadramento</p>
+    </header>
+    <main>
+        <h2>Definição e Uso</h2>
+        <p>A <mark>iframe</mark> tag especifica um <strong>quadro embutido</strong>.</p>
+        <p>Um quadro embutido é usado para incorporar outro documento no documento HTML atual. <br>
+        <strong>Dica:</strong> Use CSS para estilizar iframe <br>
+        <strong>Dica:</strong> É uma boa prática sempre incluir um atributo de título para o arquivo iframe. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.
+        <img src="imagens/iframe.png" alt="print do codigo">
+        </p>
+        <ul>
+            <li><a href="https://www.gamevicio.com/" target="site">Primeira Pagina</a></li>
+            <li><a href="https://ge.globo.com/" target="site">Segunda Pagina</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="site">Terceira Pagina</a></li>
+        </ul>
+        <iframe class="frames" name="site"  src="" frameborder="1" sandbox="allow-same-origin  allow-forms allow-scripts" referrerpolicy="no-referrer">
+
+           Navegador não tem suporte!
+        </iframe>
+        <p>Para utilizar sites diferentes em um so <strong>iframe</strong> e preciso que a ancora tenha uma <strong>target</strong> com o mesmo nome que o <mark>name</mark> criado em <mark>iframe</mark> </p>
+        <img src="imagens/iframe.2.png" alt="">
+        <P>Para deixar o iframe maais seguro e importante colocar <mark>sandbox</mark> e um <mark>referrerpolicy</mark> como no exemplo: <br>
+        <img src="imagens/seguranca-iframe.png" alt="Print de iframe">    
+        </P>
+
+
+        
+
+    
+
+    </main>
+    
+</body>
+</html>
