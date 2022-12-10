@@ -6,7 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso CSS/HTML</title>
     <style>
-
+        *{margin: 0px;
+          padding:0px;  
+        }
+        body{
+            background-color: ;
+            background-image: url(imagens/imagens-de-fundo/);
+        }
+        header{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        main{
+            padding: 5px;
+        }
+        form{
+            padding: 5px;
+        }
+        img{
+            margin: auto;
+            width: 350px;
+            padding-top: 10px;
+        }
+        nav{
+      background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+      background-repeat:no-repeat ;
+      background-size: cover;
+      
+      margin: 10px 0 0px 0 ;
+      padding:5px 0 1px 0px ;
+      text-align: center;
+      color: rgb(140, 138, 138);
+  }
+ 
+  nav img{
+          max-width: 8%;
+          border-radius: 50%;      
+  }
+  nav img:hover{
+          
+          box-shadow: 2px 2px 20px 3px #4387a1;
+  }
     </style>
 </head>
 <body>
@@ -22,15 +62,46 @@
                 " placeholder="Nome completo">
             </p>
             <p>
-
-
+                <label for="imedia">Media</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.5">
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="idia">Dia e horario da prova</label> 
+                <input type="datetime-local" name="dia" id="idia">
             </p>
             <p>
                 <input type="submit" value="Salvar">
                 <input type="reset" value="Limpar">
             </p>
         </form>
+        <img src="imagens/formularios7.png" alt="print-formulario">
+        <h2>Formularios com  Telefone e Email</h2>
+        <form action="cadastro.php" autocomplete="on">
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" max="15" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p> <br>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </form>
     </main>
+    <!--Estudar mais sobre RegEx-->
+    <nav>
+        <a href="pag12css.html"><img src="imagens/voltar3.jpg" alt=""></a> 
+        <a href="" target="_blank"><img src="imagens/avançar azul.jpg" alt=""></a>  
+        <a href="index.html"><img src="imagens/home.png" alt=""></a>
+    </nav>
     
 </body>
 </html>
