@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/css.favicon.png" type="image/x-icon">
+    <title>Curso de CSS/HTML</title>
+   <style>
+
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <p>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário geralmente é enviada a um servidor para processamento.</p>
+    </header>
+    <main>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iestado">Estado</label>
+                
+                <select name="estado" id="iestado">
+                    <option value="" selected>----Escolha----</option>  
+                   <optgroup label="Sudeste" >
+                   <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                   </optgroup>
+
+                    <optgroup label="Norte">
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option >Professor</option>
+                    <option >Desenvovedor</option>
+                    <option >Contabilista</option>
+                </datalist>
+            </p>
+
+
+
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+       
+    </main>
+    
+</body>
+</html>
