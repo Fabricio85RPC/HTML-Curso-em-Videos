@@ -6,8 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/css.favicon.png" type="image/x-icon">
     <title>Curso de CSS/HTML</title>
-   <style>
+   <style> 
+        body{
+            margin: 0;
+            height: 100vh;
+        }
 
+        header{
+            background-image: url(imagens/imagens-de-fundo/wallpaper\ noite.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+        main{
+            padding: 3px;
+            margin: 3px;
+            max-width: 1000px;
+        }
+        .img1{
+            max-width: 50%;
+         
+        }
+        nav{
+            background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+            background-position: center center;
+
+            margin:  0 ;
+            padding:5px 0 1px 0px ;
+            text-align: center;
+            color: rgb(140, 138, 138);
+        }
+        nav img{
+            max-width: 50px;
+            border-radius: 50%;      
+        }
+        nav img:hover{
+    
+            box-shadow: 2px 2px 20px 3px        #4387a1;
+        }
    </style>
 </head>
 <body>
@@ -17,44 +58,55 @@
     </header>
     <main>
         <form action="cadastro.php" method="get" autocomplete="on">
-            <p>
-                <label for="iestado">Estado</label>
+            <fieldset>
+                <legend> Formulario Teste</legend>
+                <p>
+                    <label for="iestado">Estado</label>
                 
-                <select name="estado" id="iestado">
-                    <option value="" selected>----Escolha----</option>  
-                   <optgroup label="Sudeste" >
-                   <option value="MG">Minas Gerais</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
-                   </optgroup>
-
-                    <optgroup label="Norte">
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="MA">Maranhão</option>
-                    </optgroup>
-                </select>
-            </p>
-            <p>
-                <label for="iprof">Profissão:</label>
-                <input type="text" name="prof" id="iprof" list="lstprof">
-                <datalist id="lstprof">
-                    <option >Professor</option>
-                    <option >Desenvovedor</option>
-                    <option >Contabilista</option>
-                </datalist>
-            </p>
-
-
-
-
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
+                    <select name="estado" id="iestado">
+                        <option selected>----Escolha----</option>
+                       <optgroup label="Sudeste" >
+                       <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                       </optgroup>
+                        <optgroup label="Norte">
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="MA">Maranhão</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option >Professor</option>
+                        <option >Desenvovedor</option>
+                        <option >Contabilista</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem</label> <br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva uma mensagem aqui..."></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
         </form>
-       
+
+        <p><img src="imagens/formularios11.png" alt="" class="img1"></p>
+        <p><img src="imagens/formularios12.png" alt="" class="img1"></p>
+        <p><img src="imagens/formularios13.png" alt="" class="img1"></p>
+
     </main>
-    
+    <nav>
+        <a href="pag12css.html"><img src="imagens/voltar3.jpg" alt=""></a> 
+        <a href="" target="_blank"><img src="imagens/avançar azul.jpg" alt=""></a>  
+        <a href="index.html"><img src="imagens/home.png" alt=""></a>
+        <p>Site Criado por Fabricio Ribeiro</p>
+    </nav>   
 </body>
 </html>
