@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* Estilos para impressora */
+
+*{
+    margin: 8px;
+    padding: 8px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+header{
+    padding: 8px;
+    font-size: 20px;
+}
+article{
+    width: 100%;
+}
+article::after{
+    content: 'Esse artigo fooi impresso através do site www.github.com/FabricioRPC';
+}
