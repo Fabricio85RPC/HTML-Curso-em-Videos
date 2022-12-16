@@ -25,3 +25,22 @@ h1{
     padding: 10px;
 
 }
+nav{
+    background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center center;
+
+    margin:  0 ;
+    padding:5px 0 1px 0px ;
+    text-align: center;
+    color: rgb(140, 138, 138);
+}
+nav img{
+    max-width: 50px;
+    border-radius: 50%;      
+}
+nav img:hover{
+
+    box-shadow: 2px 2px 20px 3px        #4387a1;
+}
