@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*Typical DEcive Breakpoints
+-----------------------------
+Pequenas Telas: ate 600px
+Smartphones: de 600px ate 768px
+Tablet: de 768px ate 992px
+Desktop: de 992px ate 1300px
+Grandes Telas: acima de 1300px */
+
+
+@media print {
+    body{
+        background-image: url(../imagens/back-print.jpg);/*nao necessario*/  
+    }
+
+    main{
+        border:solid 1px black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita atraves do site www.github/FabricioRPC';
+        text-decoration: overline;
+    }
+    
+    #phone{display: none;}
+    #print{display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #tablet{display: block;}
+    #phone{display: none;}  
+}
+
+
+@media  screen and (min-width: 992px) and (max-width:1300px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #pc{display: block;}   
+}
+
+
+@media screen and (min-width: 1300px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone{display: none;}
+    #tv{display: block;}   
+}
