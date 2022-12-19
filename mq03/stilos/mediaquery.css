@@ -30,6 +30,8 @@ Grandes Telas: acima de 1300px */
     
     #phone{display: none;}
     #print{display: block;}
+    #burger{display: none;}
+    #itens{display: block;} 
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -37,7 +39,9 @@ Grandes Telas: acima de 1300px */
         background-image: url(../imagens/back-tablet.jpg);
     }
     #tablet{display: block;}
-    #phone{display: none;}  
+    #phone{display: none;} 
+    #burger{display: none;}
+    #itens{display: block;} 
 }
 
 
@@ -46,7 +50,9 @@ Grandes Telas: acima de 1300px */
         background-image: url(../imagens/back-pc.jpg);
     }
     #phone{display: none;}
-    #pc{display: block;}   
+    #pc{display: block;}
+    #burger{display: none;}
+    #itens{display: block;}    
 }
 
 
@@ -55,5 +61,7 @@ Grandes Telas: acima de 1300px */
         background-image: url(../imagens/back-tv.jpg);
     }
     #phone{display: none;}
-    #tv{display: block;}   
+    #tv{display: block;}
+    #burger{display: none;}
+    #itens{display: block;}    
 }
