@@ -48,13 +48,9 @@ nav{
 }
 nav img{
     text-align: center;
- 
     border-radius: 50%;
-}
-nav img{
-    max-width: 11%;
-    width: 10%;
-}
+    width: 50px;
+}    
 nav img:hover{
     box-shadow: 2px 2px 20px 3px #67bbdc;
 }
