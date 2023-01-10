@@ -9,9 +9,44 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
     :root{
-        --cor1:  rgb(39, 144, 213);
+        --cor1:  rgb(39, 143, 213);
         --cor2:  #62CADB;
         --font-header: 'Fredericka the Great', cursive;
+    }
+
+    @media screen and (min-width:1300px){   
+        li{
+            list-style-type: none;
+            background-image: linear-gradient(to right, rgba(39, 143, 213, 0.655),rgba(39, 143, 213, 0.041));
+            width: 300px;
+            border-radius: 5px;
+            
+        }
+        li:hover{
+            background-image: linear-gradient(to right, rgb(39, 143, 213),rgba(39, 143, 213, 0.055));
+        } 
+
+        a{
+            padding: 15px;
+        }
+        
+    }
+
+
+    @media screen and (min-width:992px) and (max-width:1300px) {
+        ul{
+            columns: 3;
+        }
+        li{
+            list-style-type: none;
+            background-image: linear-gradient(to right, rgba(39, 143, 213, 0.655),rgba(39, 143, 213, 0.041));
+            width: 300px;
+            border-radius: 5px;
+        }
+        li:hover{
+            background-image: linear-gradient(to right, rgb(39, 143, 213),rgba(39, 143, 213, 0.055));
+        } 
+       
     }
         *{
             margin: 0px;
@@ -19,13 +54,16 @@
         }
 
         body{
-            background-color: #62CADB;
+            background-color: #5cc4d4;
+            width: 100vw;
+            height: 100vh;
         }
         header{ 
             text-align: center;
             background-color: rgb(39, 144, 213);
             border-radius: 2px;
             border-bottom:  solid 6px white;
+            padding: 1px;
           
 
         }
@@ -44,18 +82,16 @@
         header img{
             border-radius: 50%;
         }
-        aside{
-            background-color: white;
-            text-align: justify;
-            box-shadow:-1px 1px 10px 1px rgba(52, 51, 51, 
-            0.844);
-            border-radius: 30px 0px 30px 0px;
-        }
-        aside p{
+        
+        menu{
             padding: 5px;
         }
-        aside #p1::after{
-            content:'\1F4A1';}
+        .menu{
+            padding-right: 5px;
+        }
+        .menu:hover{
+            text-decoration: underline;
+        }
        main h2{
             background-color: var(--cor1);
             border-bottom:  solid 3px white;
@@ -64,11 +100,42 @@
             text-align: center;
             color: white;    
        } 
-      
+       ul{
+        text-align: center;
+        columns: 2;
+        padding: 20px;
+       }
 
-
+       li{
+        color: rgb(1, 71, 100);
+        padding: 2px;
+        margin: 2px;
+        font-size: 18px;
+       }
+       a{
+        font-size: 17px;
+        color: rgb(234, 233, 233);
+        padding: 2px;
+        text-decoration: none;
+       }
       
-    
+       a:hover{
+            text-decoration: underline;
+       }
+
+       footer{
+            font-family: 'Fredericka the Great', cursive;
+            font-weight: normal;
+            text-align: center;
+            background-color: rgb(39, 144, 213);
+            color: white;
+            border-radius: 2px;
+            border-top:  solid 3px white;
+            width: 100%;
+            bottom: 0;
+            padding: 3px;
+            position: fixed;
+       }    
     </style>
 </head>
 <body>
@@ -80,22 +147,19 @@
     <nav>
         <Menu>
                 
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#" class="menu">Entrar</a>
+                <a href="#" class="menu"> Contatos</a>
+                <a href="#" class="menu">Sobre</a>
+                <a href="#" class="menu"></a>
         </Menu>
     </nav>
     <main>
 
-        <aside>
-            <p id="p1">Comentario do Autor sobre o projeto</p>
-            <p>Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade meu bloco de anotacões do que estou aprendendo em forma de site para que eu possa ir praticando o que venho aprendendo. <br> <br>
-            Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e como nivel de aprendizado diferente.</p>
-        </aside>
+       
         <h2>Menu do Rascunho</h2>
+        <i id="burger"> menu  </i>
         <ul>
-            <li> <a href="pag1css.html"> Primeiros Passos </a> </li>
+            <li> <a href="pag1css.html" > Primeiros Passos </a> </li>
             <li> <a href="pag2css.html"> Tipografia </a> </li>
             <li> <a href="pag3css.html"> Fontes Externas </a> </li>
             <li> <a href="pag4css.html"> Capturando Fontes</a> </li>
@@ -112,11 +176,11 @@
             <li><a href="pag15css.html">Formularios.parte3</a></li>
             <li><a href="pag16css.html">Formularios.parte4</a></li>
             <li><a href="mq01/pag17css.html">Media Query</a></li>
-            <li><a href="mq02/pag18css.html">Mudando a orientaçaõ do dispositivo</a></li>
-            <li><a href="mq03/pag19css.html"></a></li>
-
+            <li><a href="mq02/pag18css.html">Orientaçaõ do dispositivo</a></li>
+            <li><a href="mq03/pag19css.html"> Menu Adaptativo </a></li>
         </ul>
         
     </main>
+    <footer> Fabricio Ribeiro Pires de camargos </footer>
 </body>
 </html>
