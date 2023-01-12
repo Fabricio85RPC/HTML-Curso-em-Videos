@@ -30,6 +30,19 @@ main{
     border-radius: 10px;
     
 }
+#home{
+    border-radius: 50%; 
+    width: 50px;
+    position: absolute;
+    padding: 10px;
+    right: 8px;
+    top: 17px;
+}
+#home:hover{
+    width: 60px;
+    
+
+}
 
 h1{
     color:rgb(251, 251, 251);
@@ -42,6 +55,7 @@ h1{
 img{
     display: block;
     margin: auto;
+    
 }
 #burger{
 

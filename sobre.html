@@ -7,12 +7,30 @@
     <title>Curso de css/html</title>
     <link rel="shortcut icon" href="imagens/css.favicon.png" type="image/x-icon">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+         background-color: rgb(39, 143, 213);
+        }
         aside{
             background-color: white;
             text-align: justify;
             box-shadow:-1px 1px 10px 1px rgba(52, 51, 51, 
             0.844);
             border-radius: 30px 0px 30px 0px;
+            margin: auto;
+            padding: 10px;
+            width: 400px;
+
+            position:absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%,-50%);
+            overflow: hidden;
+
+
         }
         aside p{
             padding: 5px;
@@ -21,6 +39,27 @@
             content:'\1F4A1';}
 
 
+
+
+            nav{
+            background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+            background-position: center center;
+
+            margin:  0 ;
+            padding:5px 0 1px 0px ;
+            text-align: center;
+            color: rgb(140, 138, 138);
+        }
+        nav img{
+            max-width: 50px;
+            border-radius: 50%;      
+        }
+        nav img:hover{
+    
+            box-shadow: 2px 2px 20px 3px        #4387a1;
+        }   
 
     </style>
 </head>
@@ -32,9 +71,11 @@
         <aside>
             <p id="p1">Comentario do Autor sobre o projeto</p>
             <p>Esses são meus primeiros passos pra me tornar um Front-end, e esse site e na verdade meu bloco de anotacões do que estou aprendendo em forma de site para que eu possa ir praticando o que venho aprendendo. <br> <br>
-            Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e como nivel de aprendizado diferente.</p>
+            Então ja peço desculpa pela escrita e acentuações erradas pois não foquei nisso, e tambem nas paletas de cores que foram usadas de formas diferentes sem harmonização pois cada pagina foi feita como testes inicias e com nivel de aprendizado diferente.</p>
         </aside>
     </main>
-    
+    <nav>
+        <a href="index.html"><img src="imagens/home.png" alt=""></a>
+    </nav> 
 </body>
 </html>

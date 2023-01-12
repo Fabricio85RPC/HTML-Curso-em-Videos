@@ -18,10 +18,15 @@ header{
 }
 main{
     padding: 8px;
+    margin: 10px;
 } 
 main p{
     padding: 2px;
 }
+#img2{
+    max-width: 28%;
+}
+
 
 nav{
     background-color: rgb(1, 1, 42);
@@ -29,7 +34,10 @@ nav{
     background-size: cover;
     background-position: center center;
 
-    margin:  0 ;
+    margin: 0px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
     padding:5px 0 1px 0px ;
     text-align: center;
     color: rgb(140, 138, 138);
