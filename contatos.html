@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/css.favicon.png" type="image/x-icon">
+    <title>Curso de Css/Html</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body{
+            background-color: #52b9c9;
+        }
+
+
+        header{ 
+            text-align: center;
+            background-color: rgb(39, 144, 213);
+            border-radius: 2px;
+            border-bottom:  solid 6px white;
+            padding: 1px;
+        }
+        header h1{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+        }
+        header p{
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 18px;
+        }    
+        header img{
+            border-radius: 50%;
+        }
+
+        
+        a{
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+            font-size: 17px;
+        }
+        div{
+            text-align: center;
+            margin: 10px;
+            padding: 40px;   
+        }
+        img{border-radius: 19%;}
+
+        .rede{
+            margin: auto;
+            text-align: center;
+            padding: 12px;
+        }
+        p:hover{
+            font-size: 19px;
+            text-shadow: 5px 5px 5px  rgba(56, 56, 56, 0.622);
+        }
+        img:hover{
+            box-shadow: 1px 2px 4px 2px rgba(57, 55, 55, 0.412);
+            width: 105%;
+        }
+        legend{
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Fredericka the Great', cursive;
+            color: white;
+        }
+        #itexto{
+            text-align: center;
+            display: block;
+            margin: auto;
+            width: 350px;
+            height: 300px;
+        }
+
+
+        nav{
+            background-color: rgb(26, 126, 192);
+            margin:  0 ;
+            bottom: 0;
+            
+            width: 100%;
+            padding:5px 0 1px 0px ;
+            text-align: center;
+            border-top: solid 2px white;
+            color: rgb(188, 186, 186);
+        }
+        nav img{
+            max-width: 50px;
+            border-radius: 50%;      
+        }
+        nav img:hover{
+    
+            box-shadow: 2px 2px 20px 3px  #7fbad0b6;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <H1>Rede Sociais</H1>
+        <p>Entre em uma das nossas redes socias ou deixe um comentario😉 </p>
+    </header>
+
+    <main>
+        <div>
+            <a href="" class="rede"><img src="imagens/logo in rede social1.jpg" alt="logo rede social"><p>Linkedin</p></a>
+            <a href="" class="rede"><img src="imagens/logo insta rede social1.jpg" alt=""><p>Instagram</p></a>
+            <a href="" class="rede"><img src="imagens/logo git rede social1.jpg"alt="">   <p>GitHub</p></a>
+        </div>
+
+        <form action="index.html">
+            
+            <legend>Deixe seu comentario</legend>   
+            <label for="itexto"></label>
+            <input type="text" name="texto" id="itexto" maxlength="400" >
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+
+    <nav>
+        
+        <a href="index.html"><img src="imagens/home.png" alt=""></a>
+        <p>Site Criado por Fabricio Ribeiro</p>
+    </nav>
+</body>
+</html>
