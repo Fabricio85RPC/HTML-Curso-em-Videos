@@ -17,10 +17,14 @@ header{
     background-color: rgb(101, 101, 101);
 }
 
+main{
+    padding: 4px;
+}
+
  
 main p{
-    padding-bottom: 4px;
-    padding: 1px;
+    text-align: justify;
+    
 }
 #img1{
     padding: 3px;
