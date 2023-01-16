@@ -13,7 +13,7 @@
         padding: 0px;
         }
 
-        body{
+        html, body{
             background-color: #5cc4d4;
             width: 100vw;
             height: 100vh;
@@ -23,9 +23,11 @@
         header{ 
             text-align: center;
             background-color: rgb(39, 144, 213);
-            border-radius: 2px;
             border-bottom:  solid 1px white;
+            width: 100%;
             padding: 1px;
+           
+           
         }
         header h1{
             font-family: 'Fredericka the Great', cursive;
@@ -40,20 +42,19 @@
         }  
         header img{
             border-radius: 50%;
+            
         }
 
 
-        main{
+        form{
             background-color: white;
-            width: 450px;
             border-radius: 5px;
             display: block;
             margin: auto;
             margin-top: 15px;
             padding: 15px;
+            width: 330px;
         }
-
-
         fieldset{
             font-family: 'Fredericka the Great', cursive;
             font-weight: bold;
@@ -74,9 +75,10 @@
 
         nav{
             background-color: rgb(26, 126, 192);
-            margin:  0 ;
+            margin:  0;
             bottom: 0;
             position: fixed;
+           
             width: 100%;
             padding:5px 0 1px 0px ;
             text-align: center;
@@ -98,7 +100,7 @@
         <header>
             <img src="imagens/imagem.home.jpg" alt="imagem da capa">
             <h1>Curso de CSS</h1>
-            <p>Rascunho do curso de CSS basico feito no Curso em Video</p>
+            <p id="header">Rascunho do curso de CSS basico feito no Curso em Video</p>
     </header>
     </header>
     <main>
