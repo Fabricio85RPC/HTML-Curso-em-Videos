@@ -7,61 +7,70 @@
     <link rel="shortcut icon" href="imagens/css.favicon.png" type="">
     <title>Curso de Css</title>
     <style>
-        body{
-            background-color: rgb(230, 228, 228);
+        *{
             margin: 0px;
             padding: 0px;
         }
+        body{
+            background-color: rgb(249, 249, 249);
+        }
+
+
         header{
             background: url(imagens/imagens-de-fundo/wallpaper\ noite.jpg) no-repeat, center center;
             background-size: cover;
             color: white;
-            margin-top: -22px;
-            padding: 5px;
+            padding: 7px 0 7px 0;
+            width: 100%;
             text-align: center;
-    
-        }
-    
-        main{
-            background-color: white;
-            max-width: 1000px;
-            padding: 5px;
-            display: block;
-            margin: auto;
-        }
-        img{
-            max-width: 99%;
-            padding: 1px;
-        }
-        iframe{
-            border: solid 2px;
-            margin: auto;
-            padding:10px;
-            width: 400px;
-            height: 400px;
-            display: block;
         }
 
+
+        main{text-align: center;}
+        p{
+            padding: 5px;
+        }
+        .img1{
+            width: 300px;
+            margin: auto;
+            display: block;
+        }
+        li{
+            list-style-type: none;
+           
+            text-align: center;
+
+        }
+        iframe{
+            display: block;
+            margin: auto;
+            
+            border: solid 2px;
+            padding:10px;
+            text-align: center;
+            width: 250px;
+            height: 250px;
+            
+        }
+
+      
+
         nav{
-      
-      background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
-      background-repeat:no-repeat ;
-      background-size: cover;
-      
-      margin: 10px 0 0px 0 ;
-      padding:5px 0 1px 0px ;
-      text-align: center;
-      color: rgb(140, 138, 138);
-  }
- 
-  nav img{
-          max-width: 50px;
-          border-radius: 50%;      
-  }
-  nav img:hover{
-          
-          box-shadow: 2px 2px 20px 3px #4387a1;
-  }
+            background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
+            background-repeat:no-repeat ;
+            background-size: cover;
+            padding: 5px 0 5px 0;
+            width: 100%;
+            text-align: center;
+            color: rgb(140, 138, 138);
+        }
+        nav img{
+            max-width: 50px;
+            border-radius: 50%;      
+        }
+        nav img:hover{
+            box-shadow: 2px 2px 20px 3px #4387a1;
+        }
     </style>
 </head>
 <body>
@@ -74,23 +83,23 @@
         <p>A <mark>iframe</mark> tag especifica um <strong>quadro embutido</strong>.</p>
         <p>Um quadro embutido é usado para incorporar outro documento no documento HTML atual. <br>
         <strong>Dica:</strong> Use CSS para estilizar iframe <br>
-        <strong>Dica:</strong> É uma boa prática sempre incluir um atributo de título para o arquivo iframe. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.
-        <img src="imagens/iframe.png" alt="print do codigo">
+        <strong>Dica:</strong> É uma boa prática sempre incluir um atributo de título para o arquivo iframe. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe. <br>
+        <img src="imagens/iframe.png" alt="print do codigo" class="img1">
         </p>
         <ul>
             <li><a href="https://www.gamevicio.com/" target="site">Primeira Pagina</a></li>
             <li><a href="https://ge.globo.com/" target="site">Segunda Pagina</a></li>
             <li><a href="https://www.cursoemvideo.com/" target="site">Terceira Pagina</a></li>
-        </ul>
+        </ul> <br>
         <iframe class="frames" name="site"  src="" frameborder="1" sandbox="allow-same-origin  allow-forms allow-scripts" referrerpolicy="no-referrer">
           
 
            Navegador não tem suporte!
         </iframe>
-        <p>Para utilizar sites diferentes em um so <strong>iframe</strong> e preciso que a ancora tenha uma <strong>target</strong> com o mesmo nome que o <mark>name</mark> criado em <mark>iframe</mark> </p>
-        <img src="imagens/iframe.2.png" alt="">
+        <p>Para utilizar sites diferentes em um so <strong>iframe</strong> e preciso que a ancora tenha uma <strong>target</strong> com o mesmo nome que o <mark>name</mark> criado em <mark>iframe</mark>.</p>
+        <img src="imagens/iframe.2.png" alt="" class="img1">
         <P>Para deixar o iframe maais seguro e importante colocar <mark>sandbox</mark> e um <mark>referrerpolicy</mark> como no exemplo: <br>
-        <img src="imagens/seguranca-iframe.png" alt="Print de iframe">    
+        <img src="imagens/seguranca-iframe.png" alt="Print de iframe" class="img1">    
         </P>
     </main>
     <nav>
