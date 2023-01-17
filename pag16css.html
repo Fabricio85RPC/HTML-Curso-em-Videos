@@ -9,12 +9,9 @@
     <style>
         *{
             margin: 0px;
-            height: 0px;
+            padding: 0px;
         }
-        body{
-            width: 100vw;
-            height: 100vh;
-        }
+        
 
         header{
             background-image: url(imagens/imagens-de-fundo/wallpaper\ noite.jpg);
@@ -25,14 +22,28 @@
             text-align: center;
             padding: 2px;
         }
+
+
+        
         main{
             padding: 3px;
             margin: 3px;
             max-width: 1000px;
         }
         .img1{
-            max-width: 75%;
+            width: 310px;
         }
+
+        form{
+            padding: 5px;
+        }
+        legend{
+            text-align: center;
+        }
+        p{
+            padding: 1px;
+        }
+
         nav{
             background-image: url('imagens/imagens-de-fundo/wallpaper\ noite.jpg');
             background-repeat:no-repeat ;
@@ -49,13 +60,11 @@
             border-radius: 50%;      
         }
         nav img:hover{
-    
             box-shadow: 2px 2px 20px 3px        #4387a1;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Formularios</h1>
         <p>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário geralmente é enviada a um servidor para processamento.</p>
@@ -77,7 +86,6 @@
                 <label for="in2">Numero 2</label>
                 <input type="number" name="n2" id="in2" max="100" min="1" required
                 oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-                
              </p>
              <p>
                 <label for="isoma">Soma:</label>

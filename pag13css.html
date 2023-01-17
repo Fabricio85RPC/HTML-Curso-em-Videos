@@ -20,6 +20,7 @@
             text-align: center;
         }
 
+
         form{
             border: solid 2px black;
             width: 300px;
@@ -27,17 +28,21 @@
             margin: 5px;
         }
 
+        main{
+            padding: 5px;
+            max-width: 1000px;
+        }
         img{
             padding: 2px;
         }
-
-        main{
-            padding: 2px;
-            max-width: 1000px;
+        .print{
+            width: 300px;
         }
         h3{
             color: red;
         }
+
+
         table{
             
             border-collapse: collapse;
@@ -48,6 +53,7 @@
         tbody tr:nth-child(2n){
             background-color: rgb(181, 179, 179);
         }
+        
 
         nav{
       
@@ -78,7 +84,7 @@
     <main>
         <h1>O elemento <strong>form</strong> </h1>
         <p>O elemento HTML <strong>form</strong> é usado para criar um formulário HTML para entrada do usuário: <br>
-        <img src="imagens/formularios1.png" alt="print-formulario">    
+        <img src="imagens/formularios1.png" alt="print-formulario" class="print">    
         </p>
 
         <h2>Primeiro Formulario</h2>
@@ -92,19 +98,19 @@
             <input type="reset" value="Limpar">
         </form>
 
-        <img src="imagens/formularios2.png" alt="">
+        <img src="imagens/formularios2.png" alt="" class="print">
         <h2>O elemento label </h2>
         <p>A <mark>label</mark> define um rótulo      para muitos  elementos de formulário. <br>
            O <mark>label</mark> é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada. <br>
            O label elemento também ajuda os usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do <mark>label</mark>, ele alterna o botão de opção/caixa de seleção. <br>
            O <mark>for</mark> da <mark>label</mark> deve ser igual ao id do <mark>input</mark> elemento para uni-los.
         </p>
-           <img src="imagens/formularios3.png" alt="">
+           <img src="imagens/formularios3.png" alt="" class="print">
         <h2>Atributos</h2>
 
         <h3>method</h3>
         <p>Os dados do formulário podem ser enviados como variáveis URL (com method="get") ou como pós-transação HTTP (com method="post").</p>
-        <img src="imagens/formularios4.png" alt="">
+        <img src="imagens/formularios4.png" alt="" class="print">
         <p>Observações sobre GET:
 
             <ul>
@@ -116,7 +122,7 @@
             </ul>
         </p>
 
-        <img src="imagens/formularios5.png" alt="">
+        <img src="imagens/formularios5.png" alt="" class="print">
         <p>
             Observações sobre o POST:
             <ul>
@@ -129,7 +135,7 @@
 
         <h3>autocomplete</h3>
         <p>O <mark>autocomplete</mark> especifica se um formulário deve ter o preenchimento automático ativado ou desativado.</p>
-        <img src="imagens/formularios6.png" alt="">
+        <img src="imagens/formularios6.png" alt="" class="print">
         <h3>required</h3>
         <p>Quando presente, especifica que um campo de entrada deve ser preenchido antes do envio do formulário. <br> <br>
         <strong>Observação:</strong> o requiredatributo funciona com os seguintes tipos de entrada: texto, pesquisa, url, tel, e-mail, senha, selecionadores de data, número, caixa de seleção, rádio e arquivo.</p>
