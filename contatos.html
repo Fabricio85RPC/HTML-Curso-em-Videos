@@ -16,8 +16,7 @@
 
         body{
             background-color: #52b9c9;
-            width: 100vw;
-            height: 100vh;
+           
         }
 
 
@@ -43,6 +42,7 @@
             border-radius: 50%;
         }
 
+
         
         a{
             display: inline-block;
@@ -56,7 +56,14 @@
             margin: 10px;
             padding: 40px;   
         }
-        img{border-radius: 19%;}
+        img{
+            border-radius: 19%;
+        }
+        form{
+            display: block;
+            margin: auto;
+            
+        }
 
         .rede{
             margin: auto;
@@ -129,8 +136,8 @@
         <form action="index.html">
             
             <legend>Deixe seu comentario</legend>   
-            <label for="itexto"></label>
-            <input type="text" name="texto" id="itexto" maxlength="400" >
+            <label for="itexto"></label> <br>
+            <textarea name="texto" id="itexto" cols="30" rows="10" placeholder="Escreva um comentario aqui..."></textarea>
             <div id="enviar">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
